@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  background-color: #3a0d0d;
+  font-family: "Cormorant Garamond", serif;
+  color: #fe302f;
+}
+
+.homePage-section {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+}
+
+.hero-section {
+  display: flex;
+  padding: 1.5rem 3rem 1rem 3rem;
+  width: 100%;
+}
+
+.hero-vid {
+  width: 50%;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  padding: 110px 20px;
+  background-color: #2b0909;
+}
+
+.hero-text > p {
+  font-size: 72px;
+  background-color: #2b0909;
+  margin-bottom: 10px;
+}
+
+.hero-text > span {
+  font-size: 24px;
+  background-color: #2b0909;
+  margin-bottom: 50px;
+}
+
+/* .hero-text > button {
+  cursor: pointer;
+  border: 1px solid #fe302f;
+  background-color: transparent;
+  padding: 15px 45px;
+  width: max-content;
+  align-items: center;
+} */
+
+.btn-style {
+  cursor: pointer;
+  border: 1px solid #fe302f;
+  background-color: transparent;
+  padding: 15px 45px;
+  width: max-content;
+  align-items: center;
+}
+
+.explore-navlink {
+  text-decoration: none;
+  background-color: #2b0909;
+}
+/* .explore-navlink:hover, explore-navlink:active {
+    color: #ffffff;
+} */
+
+.latestBlogPost {
+  background-color: #2b0909;
+  padding: 40px 20px;
+  height: 35rem;
+}
+
+.latestBlogPost > span {
+  background-color: #2b0909;
+  font-size: 72px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.mta {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.mta > span {
+  font-size: 72px;
+}
+
+.mta > p {
+  font-size: 18px;
+  width: 30rem;
+  line-height: 160%;
+}
+
+.stay-connected-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.stay-connected-section > span {
+  font-size: 72px;
+}
+
+.stay-connected-section > div {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.stay-conn-img-parent {
+  width: 150px;
+  height: 150px;
+}
+
+.stay-conn-img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #2b0909;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer > span {
+  font-size: 35px;
+  background-color: #2b0909;
+}
+
+.info {
+  background-color: #2b0909;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.info > p {
+  background-color: #2b0909;
+}
+
+/* Test Section */
+
+.news-article-parent {
+  margin: 2rem 3rem;
+}
+
+.header-and-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#news-art-btn {
+  padding: 10px 25px;
+}
+
+.back-btn-link {
+  text-decoration: none;
+}
+
+.news-article-parent > ul {
+list-style-type: none;
+margin-bottom: 30px;
+}
+
+.text-image {
+    width: 50%;
+  max-width: 550px;
+  height: auto;
+}
+
+.productDetailParentDiv {
+  margin: 2rem 3rem;
+}
+.prddetial-text-image {
+  width: 50%;
+  max-width: 850px;
+  height: auto;
+}
+
+.art-link {
+    border-bottom: 1px solid #fe302f;
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.art-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+}
+
+.error-page-css {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.error-page-main {
+  margin-top: 8rem;
+}
+
+.error-page-main > p {
+  margin-bottom: 20px;
+}
+
+.active {
+  color: #ffffff;
+}
+
+.root-nav {
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.root-nav::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 3px; 
+  left: 0;
+  background-color: white; 
+  transition: width 0.3s ease-in-out;
+}
+
+.root-nav:hover {
+  color: #ffffff;
+}
+
+.root-nav:hover::after {
+  width: 100%;
+}
