@@ -6,9 +6,9 @@ function Footer() {
     <div className="footer">
         <span>ChronicleHub</span>
         <div className="info">
-            <p>info@mysite.com</p>
-            <p>500 Terry Francine Street, 6th Floor, San Francisco, CA 94158</p>
-            <p>123-456-7890</p>
+            <p>earlmorningstar@gmail.com</p>
+            <p>Address To Be Placed Right Here, 012345 EM.</p>
+            <p>+234 90 3575 6627</p>
         </div>
 
     </div>

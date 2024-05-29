@@ -4,7 +4,7 @@ import RootLayout from "./pages/Root";
 import ErrorPage from "./pages/Error";
 import ProductsPage from "./pages/ProductsPage";
 import ProductsDetailPage from "./pages/ProductsDetailPage";
-// import Headlines from "./pages/Headlines";
+import { ArticlesProvider } from "./store/ArticlesContext";
 
 const router = createBrowserRouter([
   {
@@ -14,14 +14,19 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: "/products", element: <ProductsPage /> },
-      // { path: "/headlines", element: <Headlines /> },
       { path: "/products/:productId", element: <ProductsDetailPage /> },
     ],
   },
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <ArticlesProvider>
+        <RouterProvider router={router} />
+      </ArticlesProvider>
+    </>
+  );
 }
 
 export default App;

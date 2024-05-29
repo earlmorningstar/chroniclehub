@@ -1,27 +1,49 @@
-import { Outlet } from "react-router-dom";
-import MainNavigation from "../components/MainNavigation";
-import { NavLink } from "react-router-dom";
-import "./AllStyles.css";
-// import MainNavigationII from "../components/MainNavigationII";
+import React, { useState } from 'react';
+import { Outlet } from 'react-router-dom';
+import MainNavigation from '../components/MainNavigation';
+import { NavLink } from 'react-router-dom';
+import { RxHamburgerMenu } from 'react-icons/rx';
+import { RiCloseLargeFill } from 'react-icons/ri';
+import './AllStyles.css';
 
 function RootLayout() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   return (
     <>
       <MainNavigation title="ChronicleHub">
-        <NavLink to="/" className="root-nav" activeClassName="active">Home</NavLink>
-        <NavLink to="/products" className="root-nav" activeClassName="active" end>
-          Blog
-        </NavLink>
-        <span>Search</span>
+        <div className="nav-links">
+          <NavLink to="/" className="root-nav" activeClassName="active">
+            Home
+          </NavLink>
+          <NavLink to="/products" className="root-nav" activeClassName="active" end>
+            Blog
+          </NavLink>
+          <span>Search</span>
+        </div>
+        <div className="hamburger-menu" onClick={toggleDropdown}>
+          {isDropdownOpen ? <RiCloseLargeFill size={26}/> : <RxHamburgerMenu size={26}/>}
+        </div>
       </MainNavigation>
-      {/* <MainNavigation title={undefined}>
-        <NavLink to="/products" end>
-          Headlines
-        </NavLink>
-        <NavLink to="/products" end>
-          Products
-        </NavLink>
-      </MainNavigation> */}
+      {isDropdownOpen && (
+        <div className="dropdown-menu">
+
+          <div className='nav-link-dropDown'>
+            <NavLink to="/" className="root-nav-dropDown" onClick={toggleDropdown}>
+            Home
+          </NavLink>
+          <NavLink to="/products" className="root-nav-dropDown" onClick={toggleDropdown} end>
+            Blog
+          </NavLink>
+          <span onClick={toggleDropdown}>Search</span>
+          </div>
+          
+        </div>
+      )}
       <main>
         <Outlet />
       </main>
