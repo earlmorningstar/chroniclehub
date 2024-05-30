@@ -88,7 +88,6 @@ export const ArticlesProvider = ({ children }) => {
 
 export default ArticlesContext;
 
-
 // import { createContext, useState, useEffect } from "react";
 // import { formatDistanceToNow, parseISO } from "date-fns";
 
@@ -122,7 +121,7 @@ export default ArticlesContext;
 //           const response = await fetch(url);
 //           if (response.ok) {
 //             const data = await response.json();
-//             const articles = data.articles
+//             const filteredArticles = data.articles
 //               .filter((article) => {
 //                 const publishedAt = new Date(article.publishedAt);
 //                 const ageInDays = (now - publishedAt) / (1000 * 60 * 60 * 24);
@@ -146,7 +145,7 @@ export default ArticlesContext;
 //                   { addSuffix: true }
 //                 ),
 //               }));
-//             allArticles = allArticles.concat(articles);
+//             allArticles = allArticles.concat(filteredArticles);
 //             await delay(1000);
 //           } else {
 //             console.error("Failed to fetch articles from:", url);
