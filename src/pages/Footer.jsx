@@ -7,7 +7,6 @@ function Footer() {
       <div className="info">
         <p>Address To Be Placed Right Here, 012345 EM.</p>
         <p>onyeaborjoel@gmail.com</p>
-        {/* <p>+234 90 3575 6627</p> */}
       </div>
     </div>
   );

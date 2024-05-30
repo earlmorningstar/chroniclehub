@@ -6,12 +6,12 @@ const IntroNote = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Checking localStorage to see if the note has been shown before
+    // Checking localStorage to see if the note has been shown before.
     const hasShownNote = localStorage.getItem('hasShownIntroNote');
 
     if (!hasShownNote) {
       setIsVisible(true);
-      // Setting the flag in localStorage to indicate the note has been shown
+      // Setting the flag in localStorage to indicate the note has been shown.
       localStorage.setItem('hasShownIntroNote', 'true');
     }
   }, []);
@@ -118,7 +118,7 @@ export default IntroNote;
 
 
 
-
+// --------CODE FOR TESTING
 
 // import { useState, useEffect } from "react";
 // import { AiOutlineClose } from "react-icons/ai";

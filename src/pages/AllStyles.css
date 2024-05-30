@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap");
 
 * {
   background-color: #3a0d0d;
@@ -82,7 +81,6 @@
   background-color: #2b0909;
 }
 
-
 .mta {
   display: flex;
   flex-direction: column;
@@ -99,7 +97,7 @@
 
 .mta > p {
   font-size: 20px;
-  width: 30rem;
+  width: 50rem;
   line-height: 160%;
   color: #ffffff;
 }
@@ -159,7 +157,8 @@
   margin-bottom: 30px;
 }
 
-.header-and-btn> h1 {
+.header-and-btn > h1 {
+  font-size: 30px;
   color: #ffffff;
 }
 
@@ -218,7 +217,7 @@
 
 .art-details > p {
   font-size: 20px;
- 
+
   color: #ffffff;
 }
 
@@ -298,7 +297,6 @@
   transition: color 0.3s ease-in-out;
   color: #ffffff;
 }
-
 
 /* LATESTPOST STYLING */
 
@@ -422,26 +420,22 @@
 }
 
 .dismiss-button:hover {
-  animation: border-bottom 0.05s forwards, 
-             border-left 0.05s 0.05s forwards, 
-             border-top 0.05s 0.1s forwards, 
-             border-right 0.05s 0.15s forwards;
+  animation: border-bottom 0.05s forwards, border-left 0.05s 0.05s forwards,
+    border-top 0.05s 0.1s forwards, border-right 0.05s 0.15s forwards;
 }
-
 
 /* INTRO NOTE STYLING */
 
 .intro-note {
-   position: fixed;
-   padding: 20px;
+  position: fixed;
+  padding: 20px;
   top: 0;
   left: 0;
   width: 100%;
   max-height: 100vh;
-  overflow-y: auto; 
+  overflow-y: auto;
   z-index: 1000;
   animation: dropDown 1s ease forwards;
-
 }
 
 @keyframes dropDown {
@@ -484,11 +478,10 @@
   font-size: 32px;
 }
 
-.intro-note-texts  > p {
+.intro-note-texts > p {
   color: #ffffff;
   font-size: 22px;
 }
-
 
 /* -----MEDIA QUERIES */
 
@@ -496,7 +489,7 @@
   .stay-connected-section > div {
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
-   }
+  }
 
   .stay-conn-img-parent {
     width: 140px;
@@ -516,23 +509,19 @@
   }
 }
 
-
 @media screen and (max-width: 900px) {
   .mta > p {
     font-size: 25px;
-    width: 20rem;
   }
-
 }
 
-@media screen and (max-width: 940px){
+@media screen and (max-width: 940px) {
   .text-image {
     object-fit: cover;
   }
 }
 
-
-@media screen and (max-width: 930px){
+@media screen and (max-width: 930px) {
   .hero-section {
     flex-direction: column;
   }
@@ -546,9 +535,42 @@
   .latestBlogPost-text {
     width: 100vh;
   }
+  .prddetial-text-image {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 890px) {
+  .mta > span {
+    font-size: 63px;
+  }
+  .mta > p {
+    padding: 0 40px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .productDetailParentDiv {
+    margin: 2rem 1.5rem;
+  }
+  .news-article-parent {
+    margin: 2rem 1.5rem;
+  }
+
+  .header-and-btn > h1 {
+    font-size: 25px;
+  }
+  .stay-connected-section > span {
+    font-size: 45px;
+  }
+
+  .mta > p {
+    font-size: 18px;
+  }
+
   .art-details > h2 {
     font-size: 25px;
   }
@@ -564,12 +586,14 @@
   #art-details-id > p {
     font-size: 25px;
   }
+  .hero-section {
+    padding: 1.5rem;
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 750px){
-
+@media screen and (max-width: 750px) {
   .text-image {
-    width: 40%;
     max-width: 550px;
     height: auto;
   }
@@ -582,17 +606,13 @@
   .latestBlogPost-text {
     width: 100%;
   }
-.latest-post-image-parent{
-  width: 70vh;
-  height: 45vh;
-}
-.latestBlogPost > span {
-  font-size: 54px;
-}
-.prddetial-text-image {
-  width: 100%;
-}
-  
+  .latest-post-image-parent {
+    width: 70vh;
+    height: 45vh;
+  }
+  .latestBlogPost > span {
+    font-size: 54px;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -602,7 +622,11 @@
   }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
+  .stay-connected-section > span {
+    font-size: 38px;
+  }
+
   .art-details > h2 {
     font-size: 23px;
   }
@@ -615,7 +639,7 @@
 
 .dropdown-menu {
   position: fixed;
-  top: 60px; 
+  top: 60px;
   left: 0;
   right: 0;
   animation: slideDown 0.3s ease-in-out;
@@ -627,21 +651,13 @@
   gap: 20px;
   padding: 20px 0 20px 60px;
   width: 100%;
-  border: 1px solid #fe302f;
+  border-bottom: 1px solid #fe302f;
 }
 
 .nav-links {
   display: flex;
   gap: 20px;
 }
-
-/* .slide-down {
-  animation: slideDown 0.5s ease-in-out;
-}
-
-.slide-up {
-  animation: slideUp 0.5s ease-in-out;
-} */
 
 @keyframes slideDown {
   from {
