@@ -12,7 +12,7 @@ export const ArticlesProvider = ({ children }) => {
       try {
         setLoading(true);
         // const apiKey = "572983a96e15481d804f5f0043bb94e9";
-        const apiKey = process.env.APP_NEWS;
+        const apiKey = process.env.REACT_APP_NEWS_API_KEY;
         const apiUrls = [
           `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`,
           `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKey}`,
