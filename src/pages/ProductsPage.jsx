@@ -49,7 +49,7 @@ function ProductsPage() {
                 <span className="art-details">
                   <h2>{article.title}</h2>
                   <p>{article.description}</p>
-                  <p>Author: {article.author}</p>
+                  <p className="author">Author: {article.author}</p>
                   <p>Published: {article.publishedAt}</p>
                   <button className="btn-style">Read More</button>
                 </span>
@@ -269,11 +269,11 @@ export default ProductsPage;
 //                   src={article.urlToImage}
 //                   alt={article.title}
 //                 />
-//                 <span className="art-details">
+//                 <span id="art-details-id" className="art-details">
 //                   <h2>{article.title}</h2>
 //                   <p>{article.description}</p>
 //                   <p>Author: {article.author}</p>
-//                   <p>Published: {article.publishedAt}</p>
+//                   <p className="author">Published: {article.publishedAt}</p>
 //                   <button className="btn-style">Read More</button>
 //                 </span>
 //               </Link>

@@ -43,11 +43,11 @@ function ProductsDetailPage() {
         src={article.urlToImage}
         alt={article.title}
       />
-      <div className="art-details">
+      <div id="art-details-id" className="art-details">
         <h2>{article.title}</h2>
         <p>{article.description}</p>
         <p>Source: {article.source.name}</p>
-        <p>Author: {article.author}</p>
+        <p className="author">Author: {article.author}</p>
         <p>Published: {article.publishedAt}</p>
         <p>
           Content: {article.content}
@@ -173,11 +173,11 @@ export default ProductsDetailPage;
 //           src={article.urlToImage}
 //           alt={article.title}
 //         />
-//         <div className="art-details">
+//         <div id="art-details-id" className="art-details">
 //           <h2>{article.title}</h2>
 //           <p>{article.description}</p>
 //           <p>Source: {article.source.name}</p>
-//           <p>Author: {article.author}</p>
+//           <p className="author">Author: {article.author}</p>
 //           <p>Published: {article.publishedAt}</p>
 //           <p>
 //             Content: {article.content}

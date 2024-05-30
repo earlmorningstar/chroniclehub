@@ -31,13 +31,14 @@ function LatestPost() {
   return (
     <div className="latestBlogPost">
       <span>Latest Blog Post</span>
-      <h1>Articles</h1>
       {article.urlToImage && (
-        <img
-          className="latest-post-image"
-          src={article.urlToImage}
-          alt={article.title}
-        />
+        <div className="latest-post-image-parent">
+          <img
+            className="latest-post-image"
+            src={article.urlToImage}
+            alt={article.title}
+          />
+        </div>
       )}
       <div className="latestBlogPost-text">
         <h2>{article.title}</h2>
@@ -46,11 +47,11 @@ function LatestPost() {
         <p>Author: {article.author}</p>
         <p>Published: {article.publishedAt}</p>
         <p>Content: {article.content}</p>
-        <button id="latestPostBtn" className="btn-style">
-          <NavLink className="explore-navlink" to="/products">
+        <NavLink className="explore-navlink" to="/products">
+          <button id="latestPostBtn" className="btn-style">
             View Blog
-          </NavLink>
-        </button>
+          </button>
+        </NavLink>
       </div>
     </div>
   );

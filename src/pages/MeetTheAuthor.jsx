@@ -6,7 +6,7 @@ function MeetTheAuthor() {
       <span>Meet the Author</span>
       <p>
         Welcome to ChronicleHub, your gateway to a diverse array of insights and
-        perspectives sourced from across the globe. I'm Earl Morningstar, and I
+        perspectives sourced from across the globe. I'm Onyeabor Joel, and I
         initiated this blog with a vision to foster global connectivity through
         the dissemination of diverse information and voices. Here, you'll
         encounter a wealth of compelling articles spanning various subjects.
