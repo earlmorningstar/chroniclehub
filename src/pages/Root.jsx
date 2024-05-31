@@ -4,6 +4,7 @@ import MainNavigation from '../components/MainNavigation';
 import { NavLink } from 'react-router-dom';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { RiCloseLargeFill } from 'react-icons/ri';
+import { BiSearch } from "react-icons/bi";
 import './AllStyles.css';
 
 function RootLayout() {
@@ -23,16 +24,11 @@ function RootLayout() {
           <NavLink to="/products" className="root-nav" activeClassName="active" end>
             Blog
           </NavLink>
-          {/* <Link className="root-nav" activeClassName="active" end>
-            World
-          </Link>
-          <Link className="root-nav" activeClassName="active" end>
-            Programmes
-          </Link>
-          <Link className="root-nav" activeClassName="active" end>
-            Weather
-          </Link> */}
-          <span>Search</span>
+          <NavLink to="/about" className="root-nav" activeClassName="active" end>
+            About
+          </NavLink>
+          
+          <span><BiSearch size={20}/></span>
         </div>
         <div className="hamburger-menu" onClick={toggleDropdown}>
           {isDropdownOpen ? <RiCloseLargeFill size={26}/> : <RxHamburgerMenu size={26}/>}
@@ -48,15 +44,10 @@ function RootLayout() {
           <NavLink to="/products" className="root-nav-dropDown" onClick={toggleDropdown} end>
             Blog
           </NavLink>
-          {/* <Link className="root-nav-dropDown" onClick={toggleDropdown} end>
-            World
-          </Link>
-          <Link className="root-nav-dropDown" onClick={toggleDropdown} end>
-            Programmes
-          </Link>
-          <Link className="root-nav-dropDown" onClick={toggleDropdown} end>
-            Weather
-          </Link> */}
+          <NavLink to="/about" className="root-nav-dropDown" onClick={toggleDropdown} end>
+            About
+          </NavLink>
+          
           <span onClick={toggleDropdown}>Search</span>
           </div>
           

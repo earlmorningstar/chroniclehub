@@ -34,7 +34,7 @@ function ProductsDetailPage() {
       <div className="header-and-btn">
         <h1>Article Details</h1>
         <NavLink className="back-btn-link" to=".." relative="path">
-          <button className="btn-style">Previous Page</button>
+          <button className="btn-style">previous page</button>
         </NavLink>
       </div>
 
@@ -59,7 +59,7 @@ function ProductsDetailPage() {
           )}
         </p>
         <NavLink className="back-btn-link" to=".." relative="path">
-          <button className="btn-style">Previous Page</button>
+          <button className="btn-style">previous page</button>
         </NavLink>
       </div>
     </div>

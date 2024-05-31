@@ -13,6 +13,33 @@
   gap: 60px;
 }
 
+.about-page {
+  margin: 2rem 1rem;
+}
+
+#about-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-bottom: 10px;
+}
+
+.aboutPage-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.aboutPage-info > h1 {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.aboutPage-info > p {
+  color: #ffffff;
+  font-size: 20px;
+}
+
 .hero-section {
   display: flex;
   padding: 1.5rem 3rem;
@@ -118,6 +145,20 @@
   display: flex;
   justify-content: space-between;
   margin: 0 45px;
+}
+
+.sc-icon a {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+}
+
+.rotate-icon {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+}
+
+.sc-icon a:hover .rotate-icon {
+  transform: rotateY(180deg);
 }
 
 .footer {
@@ -364,8 +405,8 @@
 
 .latest-post-image-parent {
   margin: 0 auto;
-  width: 80vh;
-  height: 50vh;
+  width: 60%;
+  height: 70vh;
 }
 
 .latest-post-image {
@@ -656,7 +697,14 @@
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 20px;
+}
+
+.nav-links > span {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 @keyframes slideDown {

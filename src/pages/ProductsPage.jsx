@@ -27,7 +27,7 @@ function ProductsPage() {
         <h1>News Articles</h1>
           <NavLink className="back-btn-link" to=".." relative="path">
         <button className="btn-style">
-            Back to homepage
+            back to homepage
         </button>
           </NavLink>
       </div>
@@ -60,7 +60,7 @@ function ProductsPage() {
       )}
         <NavLink className="back-btn-link" to=".." relative="path">
       <button className="btn-style">
-          Back to homepage
+          back to homepage
       </button>
         </NavLink>
     </div>
