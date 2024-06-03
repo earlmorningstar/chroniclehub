@@ -742,3 +742,38 @@
     animation: slideDown 0.5s ease-in-out;
   }
 }
+
+.search-btn {
+  display: flex;
+  align-items: center;
+}
+
+.search-btn > span {
+  cursor: pointer;
+}
+
+.search-btn > input {
+  color: #ffffff;
+  border: none;
+  padding: 4px 0 4px 4px;
+}
+
+.search-btn > input::placeholder {
+  color: #fe302f;
+  font-size: 15px;
+}
+
+.search-btn > input:focus::placeholder {
+  color: #ffffff;
+  /* font-size: 15px; */
+}
+
+.search-btn > input:active {
+  outline: none;
+}
+
+.search-btn > input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #fe302f;
+}

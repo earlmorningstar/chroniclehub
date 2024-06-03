@@ -9,7 +9,7 @@ function ProductsPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const savedScrollPosition = sessionStorage.getItem('scrollPosition');
+    const savedScrollPosition = sessionStorage.getItem("scrollPosition");
     if (savedScrollPosition) {
       window.scrollTo(0, parseInt(savedScrollPosition));
     }
@@ -25,11 +25,9 @@ function ProductsPage() {
     <div className="news-article-parent">
       <div className="header-and-btn">
         <h1>News Articles</h1>
-          <NavLink className="back-btn-link" to=".." relative="path">
-        <button className="btn-style">
-            back to homepage
-        </button>
-          </NavLink>
+        <NavLink className="back-btn-link" to=".." relative="path">
+          <button className="btn-style">back to homepage</button>
+        </NavLink>
       </div>
 
       {loading ? (
@@ -58,11 +56,9 @@ function ProductsPage() {
           ))}
         </ul>
       )}
-        <NavLink className="back-btn-link" to=".." relative="path">
-      <button className="btn-style">
-          back to homepage
-      </button>
-        </NavLink>
+      <NavLink className="back-btn-link" to=".." relative="path">
+        <button className="btn-style">back to homepage</button>
+      </NavLink>
     </div>
   );
 }
