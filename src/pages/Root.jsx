@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import { useState, useContext } from 'react';
 import { Outlet, NavLink } from 'react-router-dom';
 import MainNavigation from '../components/MainNavigation';
 import { RxHamburgerMenu } from 'react-icons/rx';
