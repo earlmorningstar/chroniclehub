@@ -10,7 +10,8 @@ export const ArticlesProvider = ({ children }) => {
   const fetchArticles = async (query = '') => {
     try {
       setLoading(true);
-      const apiKey = process.env.REACT_APP_NEWS_API_KEY;
+      // const apiKey = process.env.REACT_APP_NEWS_API_KEY;
+      const apiKey = '572983a96e15481d804f5f0043bb94e9';
 
       let apiUrl;
       if (query) {
