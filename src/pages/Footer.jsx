@@ -6,7 +6,7 @@ function Footer() {
       <span>ChronicleHub</span>
       <div className="info">
         <p>Address To Be Placed Right Here, 012345 EM.</p>
-        <p>onyeaborjoel@gmail.com</p>
+        <p>sayhitojoelinton@gmail.com</p>
       </div>
     </div>
   );

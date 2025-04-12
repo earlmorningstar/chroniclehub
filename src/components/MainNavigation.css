@@ -5,7 +5,8 @@
   display: flex;
   justify-content: space-between;
   padding: 2rem 3rem 2px 3rem;
-  border-bottom: 1px solid #fe302f;
+  background-color: #0f52ba;
+  border-bottom: 1px solid #F8F9FA;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -15,7 +16,7 @@
 .navbar > p {
   cursor: pointer;
   font-size: 24px;
-  color: #fe302f;
+  color: #F8F9FA;
 }
 
 .navbar > div {
